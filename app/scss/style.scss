@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Areg';
+    src: url(../fonts/Actay-Regular.woff);
+}
+@font-face {
+    font-family: 'wide';
+    src: url(../fonts/ActayWide-Bold.woff);
+}
+@font-face {
+    font-family: 'Reg';
+    src: url(../fonts/Cygre-Regular.woff);
+}
+@font-face {
+    font-family: 'Semi';
+    src: url(../fonts/Cygre-SemiBold.woff);
+}
+@font-face {
+    font-family: 'Bold';
+    src: url(../fonts/Cygre-Bold.woff);
+}
+@font-face {
+    font-family: 'Med';
+    src: url(../fonts/Cygre-Medium.woff);
+}
+@font-face {
+    font-family: 'Light';
+    src: url(../fonts/Cygre-Light.woff);
+}
+@import './reset';
+:root{
+    --areg: 'Areg';
+    --wide: 'wide';
+    --reg: 'Reg';
+    --semi: 'Semi';
+    --bold: 'Bold';
+    --med: 'Med';
+    --light: 'Light';
+}
+body{
+    max-width: 1920px;
+    width: 100%;
+    background-color: #060606;
+    font-family: var(--light);
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1680px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.element-animation{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+.mt-0{
+    margin-top: 0 !important;
+}

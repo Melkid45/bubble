@@ -1,0 +1,155 @@
+.catalog{
+    width: 100%;
+    margin-top: 140px;
+    &__body{
+        width: 100%;
+        height: 1080px;
+        position: relative;
+        &-nav{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            position: absolute;
+            right: 70px;
+            align-self: center;
+            z-index: 1;
+            top: 528px;
+            span{
+                width: 46px;
+                height: 3px;
+                background: #F9F9F94D;
+                transition: all 0.3s ease;
+                
+            }
+            span.active{
+                background: #F9F9F9;
+            }
+        }
+        &-nav-text{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 70px;
+            right: 70px;
+            z-index: 1;
+            span{
+                font-family: var(--med);
+                font-weight: 500;
+                font-size: 28px;
+                leading-trim: Cap height;
+                line-height: 36px;
+                letter-spacing: 0%;
+                text-align: right;
+                color: #F9F9F9;
+            }
+            p{
+                font-family: var(--med);
+                font-weight: 500;
+                font-size: 28px;
+                leading-trim: Cap height;
+                line-height: 36px;
+                letter-spacing: 0%;
+                text-align: right;
+                
+                color: #F9F9F9B2;
+            }
+        }
+        h2{
+            position: absolute;
+            top: 70px;
+            left: 120px;
+            z-index: 1;
+            font-family: var(--wide);
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: 0%;
+            color: #F9F9F9;
+        }
+        &-item:nth-child(4){
+            opacity: 1 !important;
+            transform: translateY(0);
+        }
+        &-item{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding: 172px 120px 70px 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            opacity: 0;
+            transform: translateY(50px);
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+            &-text{
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+                position: relative;
+                z-index: 1;
+                h3{
+                    font-family: var(--wide);
+                    font-weight: 700;
+                    font-size: 82px;
+                    leading-trim: Cap height;
+                    line-height: 92px;
+                    letter-spacing: 0%;
+                    color: #F9F9F9;
+                }
+                &-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+                        span{
+                            font-family: var(--semi);
+                            font-weight: 600;
+                            font-size: 28px;
+                            leading-trim: Cap height;
+                            line-height: 32px;
+                            letter-spacing: 0%;
+                            color: #F9F9F9;
+                        }
+                        p{
+                            font-family: var(--light);
+                            font-weight: 300;
+                            font-size: 28px;
+                            leading-trim: Cap height;
+                            line-height: 32px;
+                            letter-spacing: 0%;
+                            color: #F9F9F9;
+                            max-width: 453px;
+                        }
+                    }
+                }
+            }
+        }
+        button{
+            padding: 32px 92px;
+            border-radius: 20px;
+            background: #F0536C;
+            max-width: max-content;
+            font-weight: 400;
+            font-size: 24px;
+            leading-trim: Cap height;
+            line-height: 32px;
+            letter-spacing: 0%;
+            color: #F9F9F9;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+

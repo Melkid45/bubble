@@ -1,0 +1,99 @@
+.popular{
+    width: 100%;
+    margin-top: 50px;
+    .container{
+        max-width: 1820px;
+    }
+    &__body{
+        position: relative;
+        padding: 252px 70px 356px 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 73px;
+        img{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1030px;
+            z-index: 0;
+        }
+        &-text{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            position: relative;
+            z-index: 1;
+            h2{
+                font-family: var(--wide);
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 68px;
+                letter-spacing: 0%;
+                color: #f9f9f9;
+                max-width: 872px;
+            }
+            p{
+                font-family: var(--light);
+                font-weight: 300;
+                font-style: italic;
+                font-size: 24px;
+                leading-trim: Cap height;
+                line-height: 36px;
+                letter-spacing: 0%;
+                color: #F9F9F9;
+                max-width: 663px;
+            }
+        }
+        &-caption.open{
+            .popular__body-caption-top{
+                padding-bottom: 48px;
+            }
+        }
+        &-caption{
+            display: flex;
+            flex-direction: column;
+            padding: 48px;
+            background: linear-gradient(88.36deg, rgba(46, 46, 46, 0.4) -0.63%, rgba(108, 108, 108, 0.1) 100%);
+            border-radius: 20px;
+            width: 789px;
+            position: relative;
+            z-index: 1;
+            &-top{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+                transition: all 0.5s ease;
+                span{
+                    font-family: var(--med);
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 32px;
+                    letter-spacing: 0%;
+                    color: #F9F9F9;
+                }
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            &-bot{
+                font-family: var(--light);
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0%;
+                color: #F9F9F9;
+                transition: all 0.5s ease;
+                max-height: 0;
+                overflow: hidden;
+                span{
+                    font-family: var(--semi);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
