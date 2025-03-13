@@ -60,5 +60,17 @@ body{
     transform: translateY(0%);
 }
 .mt-0{
-    margin-top: 0 !important;
+    margin-top: 150px !important;
+}
+.mob{
+    display: none !important;
+}
+.desk{
+    display: flex !important;
+}
+.mob__block{
+    display: none !important;
+}
+.hidden{
+    overflow: hidden;
 }

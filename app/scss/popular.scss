@@ -51,6 +51,7 @@
             }
         }
         &-caption{
+            position: relative;
             display: flex;
             flex-direction: column;
             padding: 48px;
@@ -58,7 +59,7 @@
             border-radius: 20px;
             width: 789px;
             position: relative;
-            z-index: 1;
+            border: 1px solid #99CB4E;
             &-top{
                 display: flex;
                 width: 100%;

@@ -1,10 +1,19 @@
+
+.header.hide{
+    transform: translateY(-100%);
+}
 .header {
     width: 100%;
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 44px 0 45px;
+    padding: 48px 0 75px;
+    top: 0;
+    left: 0;
+    background: #060606;
+    z-index: 100;
+    transition: all 0.7s ease;
     &__logo {
         width: 400px;
         height: 60px;

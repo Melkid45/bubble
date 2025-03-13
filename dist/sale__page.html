@@ -12,10 +12,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 <body>
     <header class="header">
-        <a href="/" class="header__logo">
+        <a href="/" class="header__logo desk">
             <img src="images/dist/logo.svg" alt="">
         </a>
-        <div class="header__menu">
+        <div class="header__menu desk">
             <div class="menu">
                 <div class="circle"></div>
                 <ul>
@@ -183,7 +183,95 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </ul>
             </nav>
         </div>
-        
+        <div class="header__top mob">
+            <a href="/" class="header__top-logo">
+                <img src="images/dist/header__logo-mob.svg" alt="">
+            </a>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header__mob mob">
+            <nav class="header__mob-menu">
+                <ul>
+                    <li>
+                        <a href="">О нас</a>
+                    </li>
+                    <li>
+                        <a href="">Франчайзинг</a>
+                    </li>
+                    <li>
+                        <a href="">Меню</a>
+                    </li>
+                    <li>
+                        <a href="">Акции</a>
+                    </li>
+                    <li>
+                        <a href="">Наш мерч</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__mob-address">
+                <div class="header__mob-address-wrap">
+                    <div>
+                        <span>Bubble Mania</span>
+                        <p>Санкт-Петербург, <br>
+                            ТРК Атмосфера</p>
+                    </div>
+                    <div>
+                        <span>Bubble Mania</span>
+                        <p>Иркутск, <br>
+                            ТРК Модный квартал</p>
+                    </div>
+                    <div>
+                        <span>Bubble Mania</span>
+                        <p>Санкт-Петербург, <br>
+                            ТРК Лондон Молл</p>
+                    </div>
+                    <div>
+                        <span>Bubble Mania Кафе</span>
+                        <p>Казань, <br>
+                            ул. Баумана, 24</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mob-contact">
+                <div>
+                    <span>Горячая линия:</span>
+                    <a href="tel:+79534434332">+7 (953) 443-43-32</a>
+                </div>
+                <div>
+                    <span>Почта:</span>
+                    <a href="mailto:bubblemania@mail.ru">bubblemania@mail.ru</a>
+                </div>
+            </div>
+            <div class="header__mob-wrap">
+                <img src="images/dist/header__img.png" alt="">
+                <button>
+                    Стать партнером
+                </button>
+            </div>
+            <div class="header__mob-social">
+                <a href="">
+                    <img src="images/dist/social/1.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="images/dist/social/2.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="images/dist/social/3.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="images/dist/social/4.svg" alt="">
+                </a>
+            </div>
+            <p class="header__mob-right">
+                Все права защищены. <br>
+                © 2012-2025, BUBBLEMANIA
+            </p>
+        </div>
     </header>
     <section class="sale mt-0">
         <img src="images/dist/low.webp" alt="" class="sale__bubble pink__bubble">
@@ -196,14 +284,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <h2>Действующие акции</h2>
             <div class="sale__body-block">
                 <div class="sale__body-block-item">
-                    <img src="images/dist/sale/1.png" alt="">
-                    <span>Опробуйте <br>
-                        наш конструктор!</span>
-                    <a href="">
-                        Подробнее
-                    </a>
-                </div>
-                <div class="sale__body-block-item">
                     <img src="images/dist/sale/2.png" alt="">
                     <span>Второй топпинг <br>
                         беспланый</span>
@@ -212,22 +292,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="sale">
-        <img src="images/dist/low.webp" alt="" class="sale__bubble pink__bubble">
-        <img src="images/dist/low.webp" alt="" class="sale__bubble pink__bubble">
-        <img src="images/dist/low.webp" alt="" class="sale__bubble pink__bubble">
-        <img src="images/dist/medium.webp" alt="" class="sale__bubble green__bubble">
-        <img src="images/dist/medium.webp" alt="" class="sale__bubble green__bubble">
-        <img src="images/dist/medium.webp" alt="" class="sale__bubble green__bubble">
-        <div class="sale__body">
             <h2>Прошлые акции</h2>
             <div class="sale__body-block">
                 <div class="sale__body-block-item">
                     <img src="images/dist/sale/3.png" alt="">
-                    <span>Конкурс на лучший <br>
-                        рисунок!</span>
+                    <span>Конкурс на лучший рисунок!</span>
                     <a href="">
                         Подробнее
                     </a>
@@ -235,37 +304,46 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
         </div>
     </section>
-    <div class="social">
-        <div class="social__top">
-            <span>Соц. сети</span>
-            <button class="close__social">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.0711 17.0711L10 10M2.92893 2.92898L10 10M10 10L17.0711 2.92898L2.92893 17.0711" stroke="#F9F9F9" stroke-width="1.5"/>
-                </svg>                
-            </button>
+    
+    <div class="social desk">
+        <div class="social__body">
+            <div class="social__body-top">
+                <span>Соц. сети</span>
+                <button class="close__social">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.0711 17.0711L10 10M2.92893 2.92898L10 10M10 10L17.0711 2.92898L2.92893 17.0711" stroke="#F9F9F9" stroke-width="1.5"/>
+                    </svg>                
+                </button>
+            </div>
+            <div class="social__body-bot">
+                <a href="">
+                    <img src="images/dist/main__social/1.png" alt="">
+                </a>
+                <a href="">
+                    <img src="images/dist/main__social/2.png" alt="">
+                </a>
+                <a href="">
+                    <img src="images/dist/main__social/3.png" alt="">
+                </a>
+                <a href="">
+                    <img src="images/dist/main__social/4.png" alt="">
+                </a>
+            </div>
         </div>
-        <div class="social__bot">
-            <a href="">
-                <img src="images/dist/main__social/1.png" alt="">
-            </a>
-            <a href="">
-                <img src="images/dist/main__social/2.png" alt="">
-            </a>
-            <a href="">
-                <img src="images/dist/main__social/3.png" alt="">
-            </a>
-            <a href="">
-                <img src="images/dist/main__social/4.png" alt="">
-            </a>
-        </div>
+        <button class="social__open">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12L12 12M0 12H12M12 12V0L12 24" stroke="#F9F9F9"/>
+            </svg>            
+        </button>
     </div>
     <footer class="footer">
         <div class="footer__body">
             <div class="footer__body-start">
                 <a href="/" class="footer__body-start-logo">
-                    <img src="images/dist/footer__logo.svg" alt="">
+                    <img class="desk" src="images/dist/footer__logo.svg" alt="">
+                    <img class="mob" src="images/dist/footer__logo-mob.svg" alt="">
                 </a>
-                <div class="footer__body-start-contact">
+                <div class="footer__body-start-contact desk">
                     <div>
                         <span>Номер горячей линии:</span>
                         <a href="tel:+79534434332">+7 (953) 443-43-32</a>
@@ -275,7 +353,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <a href="mailto:bubblemania@mail.ru">bubblemania@mail.ru</a>
                     </div>
                 </div>
-                <div class="footer__body-start-social">
+                <div class="footer__body-start-social desk">
                     <a href="">
                         <img src="images/dist/social/1.svg" alt="">
                     </a>
@@ -289,13 +367,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <img src="images/dist/social/4.svg" alt="">
                     </a>
                 </div>
-                <p class="footer__body-start-right">
+                <p class="footer__body-start-right desk">
                     Все права защищены. <br>
                     © 2012-2025, BUBBLEMANIA
                 </p>
             </div>
             <nav class="footer__body-menu">
-                <span>Инфо</span>
+                <span class="desk">Инфо</span>
                 <ul>
                     <li>
                         <a href="">О нас</a>
@@ -315,7 +393,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </ul>
             </nav>
             <div class="footer__body-address">
-                <span class="name">Адреса</span>
+                <span class="name desk">Адреса</span>
                 <div class="footer__body-address-wrap">
                     <div>
                         <span>Bubble Mania</span>
@@ -339,6 +417,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     </div>
                 </div>
             </div>
+            <div class="footer__body-start-contact mob">
+                <div>
+                    <span>Горячая линия:</span>
+                    <a href="tel:+79534434332">+7 (953) 443-43-32</a>
+                </div>
+                <div>
+                    <span>Почта:</span>
+                    <a href="mailto:bubblemania@mail.ru">bubblemania@mail.ru</a>
+                </div>
+            </div>
             <div class="footer__body-feedback">
                 <h3>Хотите стать парнером?</h3>
                 <form action="">
@@ -351,7 +439,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     </button>
                 </form>
             </div>
-            <img class="footer__body-img" src="images/dist/footer__img.webp" alt="">
+            <p class="footer__body-start-right mob">
+                Все права защищены. <br>
+                © 2012-2025, BUBBLEMANIA
+            </p>
+            <img class="footer__body-img desk" src="images/dist/footer__img.webp" alt="">
+            <img class="footer__body-img mob" src="images/dist/footer__img-mob.png" alt="">
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>

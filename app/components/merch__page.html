@@ -7,15 +7,15 @@
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
     <link rel="stylesheet" href="../scss/style.min.css">
-    <title>Ks Studio</title>
+    <title>Babble Mania</title>
 </head>
 
 <body>
     <header class="header">
-        <a href="/" class="header__logo">
+        <a href="/" class="header__logo desk">
             <img src="../images/dist/logo.svg" alt="">
         </a>
-        <div class="header__menu">
+        <div class="header__menu desk">
             <div class="menu">
                 <div class="circle"></div>
                 <ul>
@@ -183,7 +183,95 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </ul>
             </nav>
         </div>
-        
+        <div class="header__top mob">
+            <a href="/" class="header__top-logo">
+                <img src="../images/dist/header__logo-mob.svg" alt="">
+            </a>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header__mob mob">
+            <nav class="header__mob-menu">
+                <ul>
+                    <li>
+                        <a href="">О нас</a>
+                    </li>
+                    <li>
+                        <a href="">Франчайзинг</a>
+                    </li>
+                    <li>
+                        <a href="">Меню</a>
+                    </li>
+                    <li>
+                        <a href="">Акции</a>
+                    </li>
+                    <li>
+                        <a href="">Наш мерч</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__mob-address">
+                <div class="header__mob-address-wrap">
+                    <div>
+                        <span>Bubble Mania</span>
+                        <p>Санкт-Петербург, <br>
+                            ТРК Атмосфера</p>
+                    </div>
+                    <div>
+                        <span>Bubble Mania</span>
+                        <p>Иркутск, <br>
+                            ТРК Модный квартал</p>
+                    </div>
+                    <div>
+                        <span>Bubble Mania</span>
+                        <p>Санкт-Петербург, <br>
+                            ТРК Лондон Молл</p>
+                    </div>
+                    <div>
+                        <span>Bubble Mania Кафе</span>
+                        <p>Казань, <br>
+                            ул. Баумана, 24</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mob-contact">
+                <div>
+                    <span>Горячая линия:</span>
+                    <a href="tel:+79534434332">+7 (953) 443-43-32</a>
+                </div>
+                <div>
+                    <span>Почта:</span>
+                    <a href="mailto:bubblemania@mail.ru">bubblemania@mail.ru</a>
+                </div>
+            </div>
+            <div class="header__mob-wrap">
+                <img src="../images/dist/header__img.png" alt="">
+                <button>
+                    Стать партнером
+                </button>
+            </div>
+            <div class="header__mob-social">
+                <a href="">
+                    <img src="../images/dist/social/1.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="../images/dist/social/2.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="../images/dist/social/3.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="../images/dist/social/4.svg" alt="">
+                </a>
+            </div>
+            <p class="header__mob-right">
+                Все права защищены. <br>
+                © 2012-2025, BUBBLEMANIA
+            </p>
+        </div>
     </header>
     <section class="merch mt-0">
         <img src="../images/dist/low.webp" alt="" class="merch__bubble pink__bubble">
@@ -196,15 +284,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <span>Предварительный заказ</span>
                     <button class="close__merch">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="15" stroke="white" stroke-width="2"/>
-                            <path d="M9.88184 10.0078L21.8187 21.9447" stroke="white" stroke-width="2"/>
-                            <path d="M21.9443 10.0078L10.0075 21.9447" stroke="white" stroke-width="2"/>
-                        </svg>                        
+                            <circle cx="16" cy="16" r="15" stroke="white" stroke-width="2" />
+                            <path d="M9.88184 10.0078L21.8187 21.9447" stroke="white" stroke-width="2" />
+                            <path d="M21.9443 10.0078L10.0075 21.9447" stroke="white" stroke-width="2" />
+                        </svg>
                     </button>
                 </div>
                 <form action="" class="merch__modal-body-form">
                     <input placeholder="Имя" type="text">
                     <input placeholder="Телефон" type="tel">
+                    <input placeholder="Размер(XS, S, M, L)" type="text">
                     <input placeholder="Город" type="Город">
                     <button>
                         Забронировать вещь
@@ -223,7 +312,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <img src="../images/dist/me__main.webp" alt="">
                 </div>
                 <div class="merch__body-block-slide">
-                    <div class="splide merch__slider merch__slider-main" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide merch__slider merch__slider-main" role="group"
+                        aria-label="Splide Basic HTML Example">
                         <div class="splide__arrows">
                             <button class="splide__arrow splide__arrow--prev">
                                 <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
@@ -264,15 +354,94 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <div class="merch__body-block-slide-info">
                         <span class="name">Толстовка Bubble Mania</span>
                         <p>Черный цвет, оверсайз</p>
-                        <div class="price">4000 ₽</div>
+                        <div class="price">6000 ₽</div>
                     </div>
                     <button class="open__merch">
                         Предварительный заказ
                     </button>
+                    <div class="merch__body-block-slide-modal">
+                        <div class="merch__body-block-slide-modal-main">
+                            <div class="top">
+                                <span>Подробнее</span>
+                                <button class="close__merch">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="16" cy="16" r="15" stroke="white" stroke-width="2" />
+                                        <path d="M9.88184 10.0078L21.8187 21.9447" stroke="white" stroke-width="2" />
+                                        <path d="M21.9443 10.0078L10.0075 21.9447" stroke="white" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="splide merch__slider merch__slider-modal" role="group"
+                                aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="../images/dist/me__slide.webp" alt="">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="../images/dist/main/1.png" alt="">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="../images/dist/main/2.png" alt="">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="../images/dist/main/3.png" alt="">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="../images/dist/main/4.png" alt="">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="../images/dist/main/5.png" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="my-slider-progress">
+                                    <div class="my-slider-progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="info__text">
+                                    <h3>Толстовка Bubble Mania</h3>
+                                    <p>Черный цвет, оверсайз</p>
+                                    <span>6 000 ₽</span>
+                                </div>
+                                <div class="info__block">
+                                    <div class="info__block-item">
+                                        <div>
+                                            <span>
+                                                Стиль:
+                                            </span>
+                                            <p>
+                                                Oversize
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                Размерная сетка:
+                                            </span>
+                                            <p>
+                                                XS, S, M, L
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="info__block-item">
+                                        <span>Модели:</span>
+                                        <p>Парень: Рост 178, размер M</p>
+                                        <p>Девушка: Рост 167, размер XS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="order__button">
+                                Предварительный заказ
+                            </button>
+                        </div>
+                    </div>
                 </div>
     
                 <div class="merch__body-block-slide">
-                    <div class="splide merch__slider merch__slider-soft" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide merch__slider merch__slider-soft" role="group"
+                        aria-label="Splide Basic HTML Example">
                         <div class="splide__arrows">
                             <button class="splide__arrow splide__arrow--prev">
                                 <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
@@ -304,48 +473,124 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <div class="merch__body-block-slide-info">
                         <span class="name">Толстовка Bubble Mania</span>
                         <p>Черный цвет, оверсайз</p>
-                        <div class="price">4000 ₽</div>
+                        <div class="price">6000 ₽</div>
                     </div>
                     <button class="open__merch">
                         Предварительный заказ
                     </button>
+                    <div class="merch__body-block-slide-modal">
+                        <div class="merch__body-block-slide-modal-main">
+                            <div class="top">
+                                <span>Подробнее</span>
+                                <button class="close__merch">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="16" cy="16" r="15" stroke="white" stroke-width="2" />
+                                        <path d="M9.88184 10.0078L21.8187 21.9447" stroke="white" stroke-width="2" />
+                                        <path d="M21.9443 10.0078L10.0075 21.9447" stroke="white" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="splide merch__slider merch__slider-modal" role="group"
+                                aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="../images/dist/me__soft.webp" alt="">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="../images/dist/soft/1.png" alt="">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="../images/dist/soft/2.png" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="my-slider-progress">
+                                    <div class="my-slider-progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="info__text">
+                                    <h3>Толстовка Bubble Mania</h3>
+                                    <p>Черный цвет, оверсайз</p>
+                                    <span>6 000 ₽</span>
+                                </div>
+                                <div class="info__block">
+                                    <div class="info__block-item">
+                                        <div>
+                                            <span>
+                                                Стиль:
+                                            </span>
+                                            <p>
+                                                Oversize
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                Размерная сетка:
+                                            </span>
+                                            <p>
+                                                XS, S, M, L
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="info__block-item">
+                                        <span>Модели:</span>
+                                        <p>Парень: Рост 178, размер M</p>
+                                        <p>Девушка: Рост 167, размер XS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="order__button">
+                                Предварительный заказ
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
-    
-    <div class="social">
-        <div class="social__top">
-            <span>Соц. сети</span>
-            <button class="close__social">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.0711 17.0711L10 10M2.92893 2.92898L10 10M10 10L17.0711 2.92898L2.92893 17.0711" stroke="#F9F9F9" stroke-width="1.5"/>
-                </svg>                
-            </button>
+    <div class="social desk">
+        <div class="social__body">
+            <div class="social__body-top">
+                <span>Соц. сети</span>
+                <button class="close__social">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.0711 17.0711L10 10M2.92893 2.92898L10 10M10 10L17.0711 2.92898L2.92893 17.0711" stroke="#F9F9F9" stroke-width="1.5"/>
+                    </svg>                
+                </button>
+            </div>
+            <div class="social__body-bot">
+                <a href="">
+                    <img src="../images/dist/main__social/1.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../images/dist/main__social/2.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../images/dist/main__social/3.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../images/dist/main__social/4.png" alt="">
+                </a>
+            </div>
         </div>
-        <div class="social__bot">
-            <a href="">
-                <img src="../images/dist/main__social/1.png" alt="">
-            </a>
-            <a href="">
-                <img src="../images/dist/main__social/2.png" alt="">
-            </a>
-            <a href="">
-                <img src="../images/dist/main__social/3.png" alt="">
-            </a>
-            <a href="">
-                <img src="../images/dist/main__social/4.png" alt="">
-            </a>
-        </div>
+        <button class="social__open">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12L12 12M0 12H12M12 12V0L12 24" stroke="#F9F9F9"/>
+            </svg>            
+        </button>
     </div>
     <footer class="footer">
         <div class="footer__body">
             <div class="footer__body-start">
                 <a href="/" class="footer__body-start-logo">
-                    <img src="../images/dist/footer__logo.svg" alt="">
+                    <img class="desk" src="../images/dist/footer__logo.svg" alt="">
+                    <img class="mob" src="../images/dist/footer__logo-mob.svg" alt="">
                 </a>
-                <div class="footer__body-start-contact">
+                <div class="footer__body-start-contact desk">
                     <div>
                         <span>Номер горячей линии:</span>
                         <a href="tel:+79534434332">+7 (953) 443-43-32</a>
@@ -355,7 +600,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <a href="mailto:bubblemania@mail.ru">bubblemania@mail.ru</a>
                     </div>
                 </div>
-                <div class="footer__body-start-social">
+                <div class="footer__body-start-social desk">
                     <a href="">
                         <img src="../images/dist/social/1.svg" alt="">
                     </a>
@@ -369,13 +614,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <img src="../images/dist/social/4.svg" alt="">
                     </a>
                 </div>
-                <p class="footer__body-start-right">
+                <p class="footer__body-start-right desk">
                     Все права защищены. <br>
                     © 2012-2025, BUBBLEMANIA
                 </p>
             </div>
             <nav class="footer__body-menu">
-                <span>Инфо</span>
+                <span class="desk">Инфо</span>
                 <ul>
                     <li>
                         <a href="">О нас</a>
@@ -395,7 +640,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </ul>
             </nav>
             <div class="footer__body-address">
-                <span class="name">Адреса</span>
+                <span class="name desk">Адреса</span>
                 <div class="footer__body-address-wrap">
                     <div>
                         <span>Bubble Mania</span>
@@ -419,6 +664,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     </div>
                 </div>
             </div>
+            <div class="footer__body-start-contact mob">
+                <div>
+                    <span>Горячая линия:</span>
+                    <a href="tel:+79534434332">+7 (953) 443-43-32</a>
+                </div>
+                <div>
+                    <span>Почта:</span>
+                    <a href="mailto:bubblemania@mail.ru">bubblemania@mail.ru</a>
+                </div>
+            </div>
             <div class="footer__body-feedback">
                 <h3>Хотите стать парнером?</h3>
                 <form action="">
@@ -431,7 +686,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     </button>
                 </form>
             </div>
-            <img class="footer__body-img" src="../images/dist/footer__img.webp" alt="">
+            <p class="footer__body-start-right mob">
+                Все права защищены. <br>
+                © 2012-2025, BUBBLEMANIA
+            </p>
+            <img class="footer__body-img desk" src="../images/dist/footer__img.webp" alt="">
+            <img class="footer__body-img mob" src="../images/dist/footer__img-mob.png" alt="">
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>

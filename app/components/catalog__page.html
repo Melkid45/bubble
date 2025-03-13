@@ -7,15 +7,15 @@
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
     <link rel="stylesheet" href="../scss/style.min.css">
-    <title>Ks Studio</title>
+    <title>Babble Mania</title>
 </head>
 
 <body>
     <header class="header">
-        <a href="/" class="header__logo">
+        <a href="/" class="header__logo desk">
             <img src="../images/dist/logo.svg" alt="">
         </a>
-        <div class="header__menu">
+        <div class="header__menu desk">
             <div class="menu">
                 <div class="circle"></div>
                 <ul>
@@ -183,10 +183,98 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </ul>
             </nav>
         </div>
-        
+        <div class="header__top mob">
+            <a href="/" class="header__top-logo">
+                <img src="../images/dist/header__logo-mob.svg" alt="">
+            </a>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header__mob mob">
+            <nav class="header__mob-menu">
+                <ul>
+                    <li>
+                        <a href="">О нас</a>
+                    </li>
+                    <li>
+                        <a href="">Франчайзинг</a>
+                    </li>
+                    <li>
+                        <a href="">Меню</a>
+                    </li>
+                    <li>
+                        <a href="">Акции</a>
+                    </li>
+                    <li>
+                        <a href="">Наш мерч</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__mob-address">
+                <div class="header__mob-address-wrap">
+                    <div>
+                        <span>Bubble Mania</span>
+                        <p>Санкт-Петербург, <br>
+                            ТРК Атмосфера</p>
+                    </div>
+                    <div>
+                        <span>Bubble Mania</span>
+                        <p>Иркутск, <br>
+                            ТРК Модный квартал</p>
+                    </div>
+                    <div>
+                        <span>Bubble Mania</span>
+                        <p>Санкт-Петербург, <br>
+                            ТРК Лондон Молл</p>
+                    </div>
+                    <div>
+                        <span>Bubble Mania Кафе</span>
+                        <p>Казань, <br>
+                            ул. Баумана, 24</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mob-contact">
+                <div>
+                    <span>Горячая линия:</span>
+                    <a href="tel:+79534434332">+7 (953) 443-43-32</a>
+                </div>
+                <div>
+                    <span>Почта:</span>
+                    <a href="mailto:bubblemania@mail.ru">bubblemania@mail.ru</a>
+                </div>
+            </div>
+            <div class="header__mob-wrap">
+                <img src="../images/dist/header__img.png" alt="">
+                <button>
+                    Стать партнером
+                </button>
+            </div>
+            <div class="header__mob-social">
+                <a href="">
+                    <img src="../images/dist/social/1.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="../images/dist/social/2.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="../images/dist/social/3.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="../images/dist/social/4.svg" alt="">
+                </a>
+            </div>
+            <p class="header__mob-right">
+                Все права защищены. <br>
+                © 2012-2025, BUBBLEMANIA
+            </p>
+        </div>
     </header>
     <section id="catalog" class="catalog mt-0">
-        <div class="catalog__body">
+        <div class="catalog__body desk">
             <h2>Меню</h2>
             <div class="catalog__body-nav">
                 <span class="catalog__body-nav-dot active" data-index="0"></span>
@@ -199,7 +287,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <p>/</p>
                 <p class="all"></p>
             </div>
-            <div class="catalog__body-item first">
+            <div class="catalog__body-item catalog__item first">
                 <img src="../images/dist/1.webp" alt="">
                 <div class="catalog__body-item-text">
                     <h3>Фруктовый <br> Bubble Tea</h3>
@@ -215,11 +303,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </div>
                     </div>
                 </div>
-                <button>
-                    СОЗДАЙ СВОЙ БАББЛ
-                </button>
+                
             </div>
-            <div class="catalog__body-item second">
+            <div class="catalog__body-item catalog__item second">
                 <img src="../images/dist/2.webp" alt="">
                 <div class="catalog__body-item-text">
                     <h3>Молочный <br>
@@ -237,11 +323,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </div>
                     </div>
                 </div>
-                <button>
-                    СОЗДАЙ СВОЙ БАББЛ
-                </button>
+                
             </div>
-            <div class="catalog__body-item third">
+            <div class="catalog__body-item catalog__item third">
                 <img src="../images/dist/3.webp" alt="">
                 <div class="catalog__body-item-text">
                     <h3>Фруктовый <br>
@@ -258,11 +342,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </div>
                     </div>
                 </div>
-                <button>
-                    СОЗДАЙ СВОЙ БАББЛ
-                </button>
+                
             </div>
-            <div class="catalog__body-item fourth">
+            <div class="catalog__body-item catalog__item fourth">
                 <img src="../images/dist/4.webp" alt="">
                 <div class="catalog__body-item-text">
                     <h3>Bubble <br>
@@ -280,44 +362,155 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </div>
                     </div>
                 </div>
-                <button>
-                    СОЗДАЙ СВОЙ БАББЛ
+                
+            </div>
+        </div>
+        <div class="splide mob catalog__slider" role="group" aria-label="Splide Basic HTML Example">
+            <h2>Меню</h2>
+            <div class="catalog__slider-nav">
+                <span>1</span>
+                <p>/</p>
+                <p class="all"></p>
+            </div>
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5303 6.53033C14.8232 6.23744 14.8232 5.76256 14.5303 5.46967L9.75736 0.696698C9.46447 0.403805 8.98959 0.403805 8.6967 0.696698C8.40381 0.989592 8.40381 1.46447 8.6967 1.75736L12.9393 6L8.6967 10.2426C8.40381 10.5355 8.40381 11.0104 8.6967 11.3033C8.98959 11.5962 9.46447 11.5962 9.75736 11.3033L14.5303 6.53033ZM6.5567e-08 6.75L14 6.75L14 5.25L-6.5567e-08 5.25L6.5567e-08 6.75Z" fill="white"/>
+                    </svg>                        
                 </button>
+                <button class="splide__arrow splide__arrow--next">
+                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5303 6.53033C14.8232 6.23744 14.8232 5.76256 14.5303 5.46967L9.75736 0.696698C9.46447 0.403805 8.98959 0.403805 8.6967 0.696698C8.40381 0.989592 8.40381 1.46447 8.6967 1.75736L12.9393 6L8.6967 10.2426C8.40381 10.5355 8.40381 11.0104 8.6967 11.3033C8.98959 11.5962 9.46447 11.5962 9.75736 11.3033L14.5303 6.53033ZM6.5567e-08 6.75L14 6.75L14 5.25L-6.5567e-08 5.25L6.5567e-08 6.75Z" fill="white"/>
+                    </svg>                        
+                </button>
+            </div>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="catalog__body-item splide__slide">
+                        <img src="../images/dist/catalog/1__mob.png" alt="">
+                        <div class="catalog__body-item-text">
+                            <h3>Фруктовый <br> Bubble Tea</h3>
+                            <div class="catalog__body-item-text-wrap">
+                                <div>
+                                    <span>Основа:</span>
+                                    <p>Чай (зеленый, черный, Улун) <br>
+                                        Натуральные фруктовые сиропы Premium</p>
+                                </div>
+                                <div>
+                                    <span>Топпинги:</span>
+                                    <p>Джус-боллы и Тапиока</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__body-item splide__slide">
+                        <img src="../images/dist/catalog/2__mob.png" alt="">
+                        <div class="catalog__body-item-text">
+                            <h3>Молочный <br>
+                                Bubble Tea</h3>
+                            <div class="catalog__body-item-text-wrap">
+                                <div>
+                                    <span>Основа:</span>
+                                    <p>Высококачественная молочно- <br>сливочная основа
+                                        Чай <br>
+                                        Вкусовые добавки на молочной основе Premium</p>
+                                </div>
+                                <div>
+                                    <span>Топпинги:</span>
+                                    <p>Джус-боллы и Тапиока</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__body-item splide__slide">
+                        <img src="../images/dist/catalog/3__mob.png" alt="">
+                        <div class="catalog__body-item-text">
+                            <h3>Фруктовый <br>
+                                Bubble Йогурт</h3>
+                            <div class="catalog__body-item-text-wrap">
+                                <div>
+                                    <span>Основа:</span>
+                                    <p>Сироп йогурт Premium <br>
+                                        Натуральные фруктовые сиропы Premium</p>
+                                </div>
+                                <div>
+                                    <span>Топпинги:</span>
+                                    <p>Джус-боллы и Тапиока</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__body-item splide__slide">
+                        <img src="../images/dist/catalog/4__mob.png" alt="">
+                        <div class="catalog__body-item-text">
+                            <h3>Bubble <br>
+                                Кофе</h3>
+                            <div class="catalog__body-item-text-wrap">
+                                <div>
+                                    <span>Основа:</span>
+                                    <p>Натуральный кофе <br>
+                                        Высококачественная молочно-сливочная основа <br>
+                                        Карамель Tiger Dot Premium</p>
+                                </div>
+                                <div>
+                                    <span>Топпинги:</span>
+                                    <p>Джус-боллы и Тапиока</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="constuct">
+        <div class="container">
+            <div class="constuct__body">
+                <h2>Наш конструктор</h2>
+                <img src="../images/dist/construct.png" alt="">
             </div>
         </div>
     </section>
     
-    <div class="social">
-        <div class="social__top">
-            <span>Соц. сети</span>
-            <button class="close__social">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.0711 17.0711L10 10M2.92893 2.92898L10 10M10 10L17.0711 2.92898L2.92893 17.0711" stroke="#F9F9F9" stroke-width="1.5"/>
-                </svg>                
-            </button>
+    <div class="social desk">
+        <div class="social__body">
+            <div class="social__body-top">
+                <span>Соц. сети</span>
+                <button class="close__social">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.0711 17.0711L10 10M2.92893 2.92898L10 10M10 10L17.0711 2.92898L2.92893 17.0711" stroke="#F9F9F9" stroke-width="1.5"/>
+                    </svg>                
+                </button>
+            </div>
+            <div class="social__body-bot">
+                <a href="">
+                    <img src="../images/dist/main__social/1.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../images/dist/main__social/2.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../images/dist/main__social/3.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../images/dist/main__social/4.png" alt="">
+                </a>
+            </div>
         </div>
-        <div class="social__bot">
-            <a href="">
-                <img src="../images/dist/main__social/1.png" alt="">
-            </a>
-            <a href="">
-                <img src="../images/dist/main__social/2.png" alt="">
-            </a>
-            <a href="">
-                <img src="../images/dist/main__social/3.png" alt="">
-            </a>
-            <a href="">
-                <img src="../images/dist/main__social/4.png" alt="">
-            </a>
-        </div>
+        <button class="social__open">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12L12 12M0 12H12M12 12V0L12 24" stroke="#F9F9F9"/>
+            </svg>            
+        </button>
     </div>
     <footer class="footer">
         <div class="footer__body">
             <div class="footer__body-start">
                 <a href="/" class="footer__body-start-logo">
-                    <img src="../images/dist/footer__logo.svg" alt="">
+                    <img class="desk" src="../images/dist/footer__logo.svg" alt="">
+                    <img class="mob" src="../images/dist/footer__logo-mob.svg" alt="">
                 </a>
-                <div class="footer__body-start-contact">
+                <div class="footer__body-start-contact desk">
                     <div>
                         <span>Номер горячей линии:</span>
                         <a href="tel:+79534434332">+7 (953) 443-43-32</a>
@@ -327,7 +520,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <a href="mailto:bubblemania@mail.ru">bubblemania@mail.ru</a>
                     </div>
                 </div>
-                <div class="footer__body-start-social">
+                <div class="footer__body-start-social desk">
                     <a href="">
                         <img src="../images/dist/social/1.svg" alt="">
                     </a>
@@ -341,13 +534,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <img src="../images/dist/social/4.svg" alt="">
                     </a>
                 </div>
-                <p class="footer__body-start-right">
+                <p class="footer__body-start-right desk">
                     Все права защищены. <br>
                     © 2012-2025, BUBBLEMANIA
                 </p>
             </div>
             <nav class="footer__body-menu">
-                <span>Инфо</span>
+                <span class="desk">Инфо</span>
                 <ul>
                     <li>
                         <a href="">О нас</a>
@@ -367,7 +560,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </ul>
             </nav>
             <div class="footer__body-address">
-                <span class="name">Адреса</span>
+                <span class="name desk">Адреса</span>
                 <div class="footer__body-address-wrap">
                     <div>
                         <span>Bubble Mania</span>
@@ -391,6 +584,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     </div>
                 </div>
             </div>
+            <div class="footer__body-start-contact mob">
+                <div>
+                    <span>Горячая линия:</span>
+                    <a href="tel:+79534434332">+7 (953) 443-43-32</a>
+                </div>
+                <div>
+                    <span>Почта:</span>
+                    <a href="mailto:bubblemania@mail.ru">bubblemania@mail.ru</a>
+                </div>
+            </div>
             <div class="footer__body-feedback">
                 <h3>Хотите стать парнером?</h3>
                 <form action="">
@@ -403,7 +606,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     </button>
                 </form>
             </div>
-            <img class="footer__body-img" src="../images/dist/footer__img.webp" alt="">
+            <p class="footer__body-start-right mob">
+                Все права защищены. <br>
+                © 2012-2025, BUBBLEMANIA
+            </p>
+            <img class="footer__body-img desk" src="../images/dist/footer__img.webp" alt="">
+            <img class="footer__body-img mob" src="../images/dist/footer__img-mob.png" alt="">
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>

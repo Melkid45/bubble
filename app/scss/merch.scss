@@ -104,9 +104,6 @@
                     vertical-align: middle;
                     color: #060606;
                 }
-                input:nth-child(3){
-                    width: 100%;
-                }
                 button{
                     width: 100%;
                     margin-top: 16px;
@@ -178,10 +175,17 @@
                 background: linear-gradient(88.36deg, rgba(46, 46, 46, 0.4) -0.63%, rgba(108, 108, 108, 0.1) 100%);
                 box-shadow: 0px 0px 20px 0px #1E1E1E40;
                 backdrop-filter: blur(20px);
+                outline: 1px solid #99CB4E;
                 img{
                     width: 100%;
                     height: 100%;
                 }
+            }
+            &-slide:nth-child(2){
+                outline: 1px solid #F0536C;
+            }
+            &-slide:nth-child(3){
+                outline: 1px solid #99CB4E;
             }
             &-slide{
                 width: 402px;
@@ -191,7 +195,6 @@
                 border-radius: 20px;
                 background: linear-gradient(88.36deg, rgba(46, 46, 46, 0.4) -0.63%, rgba(108, 108, 108, 0.1) 100%);
                 box-shadow: 0px 0px 20px 0px #1E1E1E40;
-                backdrop-filter: blur(20px);
                 padding: 32px;
                 .merch__slider{
                     width: 100%;
@@ -202,6 +205,7 @@
                         opacity: 0.25;
                         transition: all 0.3s ease;
                         padding: 0;
+                        z-index: 1 !important;
                         svg{
                             width: 12px;
                             height: 12px;
@@ -274,6 +278,175 @@
                 button:hover{
                     background: #F0536C;
                 }
+                &-modal.active{
+                    scale: 1;
+                }
+                &-modal{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 100;
+                    width: 100vw;
+                    height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #A9C57F33;
+                    backdrop-filter: blur(10px);
+                    transition: all 0.5s ease;
+                    scale: 0;
+                    &-main.active{
+                        opacity: 1;
+                    }
+                    &-main{
+                        width: 828px;
+                        padding: 70px 0;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 48px;
+                        background: #060606;
+                        border-radius: 20px;
+                        transition: all 0.3s ease;
+                        opacity: 0;
+                        .top{
+                            width: 100%;
+                            display: flex;
+                            align-content: center;
+                            justify-content: space-between;
+                            padding: 0 70px;
+                            span{
+                                font-family: var(--wide);
+                                font-weight: 700;
+                                font-size: 36px;
+                                leading-trim: Cap height;
+                                line-height: 42px;
+                                letter-spacing: 0%;
+                                vertical-align: middle;
+                                color: #F9F9F9;
+                            }
+                            button{
+                                background: transparent;
+                                padding: 0;
+                                width: auto;
+                                svg{
+                                    width: 32px;
+                                    height: 32px;
+                                }
+                            }
+                        }
+                        .merch__slider-modal{
+                            padding-left: 70px;
+                            width: 100%;
+                            .splide__slide{
+                                width: 247px !important;
+                                height: 320px;
+                                margin-right: 24px !important;
+                            }
+                            .my-slider-progress {
+                                background: #4A4A4A33;
+                                margin: 0 auto;
+                                margin-top: 24px;
+                                width: 230px;
+                            }
+                            
+                            .my-slider-progress-bar {
+                                background: #252525;
+                                height: 3px;
+                                transition: width 400ms ease;
+                                width: 0;
+                            }
+                        }
+                        .info{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 32px;
+                            padding: 0 70px;
+                            .info__text{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 16px;
+                                h3{
+                                    font-family: var(--med);
+                                    font-weight: 500;
+                                    font-size: 28px;
+                                    leading-trim: Cap height;
+                                    line-height: 28px;
+                                    letter-spacing: 0%;
+                                    color: #F9F9F9;
+                                    margin-top: 0;
+                                }
+                                p{
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    leading-trim: Cap height;
+                                    line-height: 16px;
+                                    letter-spacing: 0%;
+                                    color: #F9F9F999;
+                                }
+                                span{
+                                    margin-top: 8px;
+                                    font-family: var(--semi);
+                                    font-weight: 600;
+                                    font-size: 36px;
+                                    leading-trim: Cap height;
+                                    line-height: 42px;
+                                    letter-spacing: 0%;
+                                    color: #F9F9F9;
+                                }
+                            }
+                            .info__block{
+                                display: flex;
+                                gap: 64px;
+                                &-item{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 8px;
+                                    div{
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 8px;
+                                    }
+                                    span{
+                                        font-family: var(--med);
+                                        font-weight: 500;
+                                        font-size: 18px;
+                                        leading-trim: Cap height;
+                                        line-height: 24px;
+                                        letter-spacing: 0%;
+                                        color: #F9F9F9;
+                                    }
+                                    p{
+                                        font-family: var(--light);
+                                        font-weight: 300;
+                                        font-size: 18px;
+                                        leading-trim: Cap height;
+                                        line-height: 24px;
+                                        letter-spacing: 0%;
+                                        color: #F9F9F9;
+                                    }
+                                }
+                            }
+                        }
+                        .order__button{
+                            width: 688px;
+                            height: 89px;
+                            background: #F0536C;
+                            border-radius: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #F9F9F9;
+                            font-weight: 400;
+                            font-size: 24px;
+                            leading-trim: Cap height;
+                            line-height: 16px;
+                            letter-spacing: 0%;
+                            vertical-align: middle;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                
             }
             &-soft{
                 width: 402px;
