@@ -255,8 +255,9 @@ $('.burger').on('click', function(e){
 $(window).on('load', function(){
     $('.catalog__body-nav-text .all').text(`${$('.catalog__item').length}`)
 })
-if (width >= 780){
-    const controller = new ScrollMagic.Controller();
+const controller = new ScrollMagic.Controller();
+
+if (width > 780){
     if (document.querySelector('.catalog')){
         const sections = document.querySelectorAll('.catalog__body-item');
         const paginationDots = document.querySelectorAll('.catalog__body-nav-dot');
@@ -327,6 +328,42 @@ if (width >= 780){
     const sceneFran = new ScrollMagic.Scene({
       triggerElement: '.franchising__soft', // Элемент, который будет триггером
       duration: 1000,             // Длина сцены в пикселях
+      triggerHook: 'onEnter'           // Точка срабатывания (0.5 - середина экрана)
+    })
+    .setTween(timelineLineFran)           // Привязываем временную шкалу к сцене
+    .addTo(controller);
+}
+
+if (width <= 780){
+    const timelineLine = new TimelineMax();
+    
+    // Добавляем анимации в timeline
+    timelineLine
+      .to('.one__line', { x: '-44%', duration: 2 }, 0) // Анимация для первого элемента
+      .to('.two__line', { x: '44%', duration: 2 }, 0); // Анимация для второго элемента (начинается одновременно с первой)
+    
+    // Создаем сцену ScrollMagic
+    const scene = new ScrollMagic.Scene({
+      triggerElement: '.station', // Элемент, который будет триггером
+      duration: 1500,             // Длина сцены в пикселях
+      triggerHook: 'onLeave'           // Точка срабатывания (0.5 - середина экрана)
+    })
+    .setPin('.station')
+    .setTween(timelineLine)           // Привязываем временную шкалу к сцене
+    .addTo(controller);
+
+
+
+    const timelineLineFran = new TimelineMax();
+    
+    timelineLineFran
+      .to('.fran__one', { x: '-603.5%', duration: 2 }, 0) // Анимация для первого элемента
+      .to('.fran__two', { x: '0%', duration: 2 }, 0); // Анимация для второго элемента (начинается одновременно с первой)
+    
+    // Создаем сцену ScrollMagic
+    const sceneFran = new ScrollMagic.Scene({
+      triggerElement: '.franchising__soft', // Элемент, который будет триггером
+      duration: 700,             // Длина сцены в пикселях
       triggerHook: 'onEnter'           // Точка срабатывания (0.5 - середина экрана)
     })
     .setTween(timelineLineFran)           // Привязываем временную шкалу к сцене
@@ -433,19 +470,23 @@ if (document.querySelector('.merch__slider-modal')){
     
 
     //Other Desk
-
-    var splide = new Splide( '.merch__slider-main', {
-        perPage: 1,
-        type : 'loop',
-        pagination: false
-    } );
+    if (document.querySelector('.merch__slider-main')) {
+        var splide = new Splide( '.merch__slider-main', {
+            perPage: 1,
+            type : 'loop',
+            pagination: false
+        } );
+        
+        splide.mount();
+    }
     
-    splide.mount();
-
-    var splide = new Splide( '.merch__slider-soft', {
-        perPage: 1,
-        type : 'loop',
-        pagination: false
-    } );
+    if (document.querySelector('.merch__slider-soft')){
+        var splide = new Splide( '.merch__slider-soft', {
+            perPage: 1,
+            type : 'loop',
+            pagination: false
+        } );
+        
+        splide.mount();
+    }
     
-    splide.mount();
