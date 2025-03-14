@@ -1775,7 +1775,7 @@
             &-wrap{
                 display: flex;
                 flex-wrap: wrap;
-                column-gap: 70rem;
+                column-gap: 65rem;
                 row-gap: 24rem;
                 div{
                     display: flex;
@@ -1805,7 +1805,9 @@
         &-contact{
             display: flex;
             flex-direction: row;
-            gap: 51rem;
+            gap: 0rem;
+            width: 100%;
+            justify-content: space-between !important;
             div{
                 display: flex;
                 flex-direction: column;
