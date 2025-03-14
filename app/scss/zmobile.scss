@@ -849,7 +849,7 @@
                 &-wrap{
                     display: flex;
                     flex-wrap: wrap;
-                    column-gap: 43rem;
+                    column-gap: 55rem;
                     row-gap: 24rem;
                     div{
                         display: flex;
@@ -858,20 +858,21 @@
                         span{
                             font-family: var(--semi);
                             font-weight: 600;
-                            font-size: 16rem;
+                            font-size: 15rem;
                             leading-trim: Cap height;
-                            line-height: 16rem;
+                            line-height: 15rem;
                             letter-spacing: 0%;
                             color: #F9F9F9;
                         }
                         p{
                             font-family: var(--light);
                             font-weight: 300;
-                            font-size: 14rem;
+                            font-size: 13rem;
                             leading-trim: Cap height;
-                            line-height: 16rem;
+                            line-height: 15rem;
                             letter-spacing: 0%;
                             color: #F9F9F999;
+                            color: #EF526C;
                         }
                     }
                 }
