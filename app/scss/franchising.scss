@@ -148,7 +148,7 @@
     &__top{
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 32px;
         padding: 0 120px;
         h2{
             font-family: var(--wide);
@@ -161,11 +161,12 @@
         &-block{
             display: flex;
             gap: 70px;
-            align-items: flex-end;
+            align-items: flex-start;
             &-info{
                 display: flex;
                 flex-direction: column;
-                gap: 70px;
+                height: auto;
+                gap: 240px;
                 p{
                     font-family: var(--light);
                     font-weight: 300;
@@ -288,6 +289,7 @@
                 backdrop-filter: blur(20px);
                 box-shadow: 0px 0px 20px 0px #1E1E1E40;
                 border-radius: 20px;
+                border: 1px solid #99CB4E;
             }
         }
     }
@@ -587,7 +589,7 @@
             border-radius: 20px;
             width: 1678px;
             margin: 0 auto;
-            border: 1px solid #EF526C;
+            border: 1px solid #99CB4E;
             img{
                 width: 479px;
                 height: 517px;

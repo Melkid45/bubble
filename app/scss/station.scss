@@ -115,8 +115,9 @@
             display: flex;
             flex-direction: column;
             gap: 32px;
+            width: 100%;
             &-line:nth-child(1){
-                transform: translateX(35.3%);
+                transform: translateX(6%);
                 .station__top-lines-line-item:nth-child(2n){
                     border: 1px solid #99CB4E;
                 }
@@ -125,7 +126,7 @@
                 }
             }
             &-line:nth-child(2){
-                transform: translateX(-35.3%);
+                transform: translateX(-206%);
                 .station__top-lines-line-item:nth-child(2n){
                     border: 1px solid #99CB4E;
                 }
@@ -136,7 +137,6 @@
             &-line{
                 display: flex;
                 gap: 32px;
-                overflow: hidden;
                 transition: all 0.3s ease;
                 &-item{
                     display: flex;

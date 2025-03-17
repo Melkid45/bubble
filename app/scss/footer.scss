@@ -16,6 +16,7 @@
             height: 401px;
             bottom: 0px;
             left: 76px;
+            z-index: -1;
         }
         &-start{
             display: flex;
@@ -152,6 +153,23 @@
                         color: #F9F9F999;
                     }
                 }
+                a{
+                    font-weight: 400;
+                    font-size: 18px;
+                    leading-trim: Cap height;
+                    line-height: 24px;
+                    letter-spacing: 0%;
+                    color: #F9F9F999;
+                    position: relative;
+                }
+                a:before{
+                    content: '';
+                    width: 100%;
+                    position: absolute;
+                    bottom: -2px;
+                    height: 1px;
+                    background: #F9F9F999;
+                }
             }
         }
         &-feedback{
@@ -169,6 +187,7 @@
                 vertical-align: middle;
                 text-transform: uppercase;
                 color: #F9F9F9;
+                white-space: nowrap;
             }
             form{
                 display: flex;
@@ -277,17 +296,22 @@
             }
         }
     }
+    .social__open.active{
+        transform: translateX(0%);
+    }
     .social__open{
         width: 48px;
         height: 48px;
-        border-radius: 50%;
+        border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
         border: 1px solid #99CB4E;
         position: absolute;
-        bottom: -288px;
+        bottom: -126px;
         right: 0;
+        transition: all 0.5s ease;
+        transform: translateX(150%);
         background: linear-gradient(88.36deg, rgba(46, 46, 46, 0.4) -0.63%, rgba(108, 108, 108, 0.1) 100%);
         svg{
             width: 24px;

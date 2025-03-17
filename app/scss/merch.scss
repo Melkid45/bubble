@@ -3,6 +3,7 @@
     margin-top: 70px;
     padding: 140px 120px;
     position: relative;
+    overflow: hidden;
     &__bubble{
         position: absolute;
         transition: all 0.1s ease;
@@ -54,13 +55,14 @@
             opacity: 1;
         }
         &-body{
+            border: 1px solid #EF526C;
             padding: 70px;
             display: flex;
             flex-direction: column;
             gap: 48px;
             border-radius: 20px;
             background: #060606;
-            width: 828px;
+            width: 830px;
             opacity: 0;
             transition: all 0.3s ease;
             &-top{
@@ -299,6 +301,7 @@
                         opacity: 1;
                     }
                     &-main{
+                        border: 1px solid #99CB4E;
                         width: 828px;
                         padding: 70px 0;
                         display: flex;
@@ -337,6 +340,28 @@
                         .merch__slider-modal{
                             padding-left: 70px;
                             width: 100%;
+                            .splide__arrow{
+                                width: 32px;
+                                height: 32px;
+                                background: #060606;
+                                opacity: 1 !important;
+                                transition: all 0.3s ease;
+                                padding: 0;
+                                z-index: 1 !important;
+                                svg{
+                                    width: 12px;
+                                    height: 12px;
+                                    fill: none;
+                                    position: relative;
+                                    z-index: 2;
+                                }
+                            }
+                            .splide__arrow:hover{
+                                opacity: 1;
+                            }
+                            .splide__arrow:focus{
+                                opacity: 1;
+                            }
                             .splide__slide{
                                 width: 247px !important;
                                 height: 320px;

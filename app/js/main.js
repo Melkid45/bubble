@@ -33,7 +33,18 @@ if (width >= 780){
 
 
 
-
+$('.open__merch').on('click', function(e){
+    $(this).next('.sale__body-block-item-modal').addClass('active')
+    setTimeout(() => {
+        $(this).next('.sale__body-block-item-modal').children('.sale__body-block-item-modal-body').addClass('active')
+    }, 500);
+})
+$('.close__sale').on('click', function(e){
+    $('.sale__body-block-item-modal-body').removeClass('active')
+    setTimeout(() => {
+        $('.sale__body-block-item-modal').removeClass('active')
+    }, 300);
+})
 
 let col = 0
 $(window).on('scroll', function(e){
@@ -49,10 +60,12 @@ $(window).on('scroll', function(e){
 })
 $('.social__open').on('click', function(){
     $('.social__body').addClass('active')
+    $(this).removeClass('active')
 })
 
 $('.close__social').on('click', function(e){
     $('.social__body').removeClass('active')
+    $('.social__open').addClass('active')
 })
 
 $('.main__body-cap-circle button').on('click', function(e){
@@ -144,7 +157,7 @@ $('.order__button').on('click', function(e){
 
 if (width >= 780){
     $(document).ready(function(){
-        $(document).mousemove(function(e){
+        $(document).on('mousemove' ,function(e){
         $('.reviews__wrap').each(function(){
             var pos = $(this).offset()
             var elem_left = pos.left;
@@ -152,7 +165,7 @@ if (width >= 780){
             var Xinner = e.pageX - elem_left;
             var Yinner = e.pageY - elem_top;
             $(this).css({
-                transform: `translate(${-Xinner/25}px , ${-Yinner/25}px)`,
+                transform: `translate(${-Xinner / 25}px, ${-Yinner / 25}px)`,
             });
         })
         $('.pink__bubble').each(function(){
@@ -175,27 +188,32 @@ if (width >= 780){
                 transform: `translate(${-Xinner/15}px , ${-Yinner/15}px)`,
             });
         })
-        $('.about__body-bubble-low').each(function(){
-            var pos = $(this).offset()
-            var elem_left = pos.left;
-            var elem_top = pos.top;
-            var Xinner = e.pageX - elem_left;
-            var Yinner = e.pageY - elem_top;
-            $(this).css({
-                transform: `translate(${Xinner/15}px , ${Yinner/15}px)`,
-            });
-        })
-        $('.about__body-bubble-medium').each(function(){
-            var pos = $(this).offset()
-            var elem_left = pos.left;
-            var elem_top = pos.top;
-            var Xinner = e.pageX - elem_left;
-            var Yinner = e.pageY - elem_top;
-            $(this).css({
-                transform: `translate(${-Xinner/30}px , ${-Yinner/30}px)`,
-            });
-        })
-        var pos = $('.about__body-bubble-low').offset();
+        if (document.querySelector('.about__body-bubble-low')){
+            $('.about__body-bubble-low').each(function(){
+                var pos = $(this).offset()
+                var elem_left = pos.left;
+                var elem_top = pos.top;
+                var Xinner = e.pageX - elem_left;
+                var Yinner = e.pageY - elem_top;
+                $(this).css({
+                    transform: `translate(${Xinner/15}px , ${Yinner/15}px)`,
+                });
+            })
+        }
+        if (document.querySelector('.about__body-bubble-medium')){
+            $('.about__body-bubble-medium').each(function(){
+                var pos = $(this).offset()
+                var elem_left = pos.left;
+                var elem_top = pos.top;
+                var Xinner = e.pageX - elem_left;
+                var Yinner = e.pageY - elem_top;
+                $(this).css({
+                    transform: `translate(${-Xinner/30}px , ${-Yinner/30}px)`,
+                });
+            })
+        }
+        if (document.querySelector('.about__body-bubble-big') && document.querySelector('.about__body-bubble-sobig')){
+            var pos = $('.about__body-bubble-big').offset();
         var posTwo = $('.about__body-bubble-sobig').offset();
         var elem_left = pos.left;
         var elem_top = pos.top;
@@ -211,6 +229,8 @@ if (width >= 780){
         $('.about__body-bubble-big').css({
             transform: `translate(${-XinnerTWo/50}px , ${YinnerTwo/50}px)`,
         });
+        }
+        
         });
     });
 }
@@ -256,6 +276,10 @@ $(window).on('load', function(){
     $('.catalog__body-nav-text .all').text(`${$('.catalog__item').length}`)
 })
 const controller = new ScrollMagic.Controller();
+
+
+
+
 
 if (width > 780){
     if (document.querySelector('.catalog')){
@@ -304,8 +328,8 @@ if (width > 780){
     
     // Добавляем анимации в timeline
     timelineLine
-      .to('.one__line', { x: '-35.3%', duration: 2 }, 0) // Анимация для первого элемента
-      .to('.two__line', { x: '35.3%', duration: 2 }, 0); // Анимация для второго элемента (начинается одновременно с первой)
+      .to('.one__line', { x: '-206%', duration: 2 }, 0) // Анимация для первого элемента
+      .to('.two__line', { x: '6%', duration: 2 }, 0); // Анимация для второго элемента (начинается одновременно с первой)
     
     // Создаем сцену ScrollMagic
     const scene = new ScrollMagic.Scene({
@@ -339,8 +363,8 @@ if (width <= 780){
     
     // Добавляем анимации в timeline
     timelineLine
-      .to('.one__line', { x: '-44%', duration: 2 }, 0) // Анимация для первого элемента
-      .to('.two__line', { x: '44%', duration: 2 }, 0); // Анимация для второго элемента (начинается одновременно с первой)
+      .to('.one__line', { x: '-623%', duration: 2 }, 0) // Анимация для первого элемента
+      .to('.two__line', { x: '7%', duration: 2 }, 0); // Анимация для второго элемента (начинается одновременно с первой)
     
     // Создаем сцену ScrollMagic
     const scene = new ScrollMagic.Scene({
@@ -368,16 +392,43 @@ if (width <= 780){
     })
     .setTween(timelineLineFran)           // Привязываем временную шкалу к сцене
     .addTo(controller);
+
+    const timelineLineStation = new TimelineMax();
+    
+    timelineLineStation
+      .to('.station__bottom-block', { x: `${($('.station__bottom-block-item').length - 1) * -342 + ($('.station__bottom-block-item').length - 1) * -24 + 'rem'}`, duration: 2 }, 0)
+    const sceneStat = new ScrollMagic.Scene({
+      triggerElement: '.station__bottom',
+      duration: 600,
+      triggerHook: 'onCenter'
+    })
+    .setTween(timelineLineStation)
+    .addTo(controller);
+
+    
+
+
+    const timelineLineFranItem = new TimelineMax();
+    
+    timelineLineFranItem
+      .to('.franchising__bottom-block', { x: `${($('.franchising__bottom-block-item').length - 1) * -342 + ($('.franchising__bottom-block-item').length - 1) * -24 + 'rem'}`, duration: 2 }, 0)
+    const sceneItem = new ScrollMagic.Scene({
+      triggerElement: '.franchising__bottom',
+      duration: 600,
+      triggerHook: 'onCenter'
+    })
+    .setTween(timelineLineFranItem)
+    .addTo(controller);
+
 }
 
 
 if (document.querySelector('.merch__slider-modal')){
-    console.log(1)
+    
     $('.merch__slider-modal').each(function(e) {
         let splider = new Splide(this, {
             type : 'loop',
             pagination: false,
-            arrows: false
         })
         var bar    = splider.root.querySelector( '.my-slider-progress-bar' );
         splider.on( 'mounted move', function () {
@@ -392,7 +443,7 @@ if (document.querySelector('.merch__slider-modal')){
 
     //Lines Mob
     if (document.querySelector('.lines')){
-        console.log(1)
+        
         var splideLine = new Splide( '.lines', {
             type : 'loop',
             pagination: false,
@@ -408,30 +459,8 @@ if (document.querySelector('.merch__slider-modal')){
         splideLine.mount();
     }
     
-
-
-    // Station Mob
-    if (document.querySelector('.station__splide')){
-        console.log(1)
-        var splideStation = new Splide( '.station__splide', {
-            type : 'loop',
-            pagination: false,
-            perMove: 1,
-            arrows: false
-        } );
-        var barStation    = splideStation.root.querySelector( '.my-slider-progress-bar' );
-        splideStation.on( 'mounted move', function () {
-                var end  = splideStation.Components.Controller.getEnd() + 1;
-                var rate = Math.min( ( splideStation.index + 1 ) / end, 1 );
-                barStation.style.width = String( 100 * rate ) + '%';
-            } );
-        splideStation.mount();
-    }
-    
-
     // Francising MObile
     if (document.querySelector('.fran__slider')){
-        console.log(1)
         var splideFran = new Splide( '.fran__slider', {
             pagination: false,
             type : 'loop',
@@ -450,7 +479,7 @@ if (document.querySelector('.merch__slider-modal')){
 
     //Catalog
     if (document.querySelector('.catalog__slider')){
-        console.log(1)
+        
         var splideCatalog = new Splide( '.catalog__slider', {
             perPage: 1,
             perMove: 1,

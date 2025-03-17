@@ -27,6 +27,18 @@
     src: url(../fonts/Cygre-Light.woff);
 }
 @import './reset';
+html::-webkit-scrollbar {
+    width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #EF526C;
+    border-radius: 20px;
+}
 :root{
     --areg: 'Areg';
     --wide: 'wide';

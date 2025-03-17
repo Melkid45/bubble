@@ -1,0 +1,201 @@
+.ryder-outWrap {
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.index-tasteWrap {
+    position: relative;
+    padding-bottom: 58px;
+    padding-top: 170px;
+}
+
+.sweet-outWrap {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    z-index: 9;
+}
+
+.sweet-container {
+    position: relative;
+    .main__body-cap-circle:nth-child(1){
+        top: 80px;
+        left: -35px;
+        .main__body-cap-circle-info{
+            width: 459px;
+            right: 50px;
+            top: 0;
+        }
+    }
+    .main__body-cap-circle:nth-child(2){
+        top: 291px;
+        right: -8px;
+        .main__body-cap-circle-info{
+            width: 489px;
+            left: 50px;
+            top: 0;
+        }
+    }
+    .main__body-cap-circle:nth-child(3){
+        top: 390px;
+        left: -12px;
+        .main__body-cap-circle-info{
+            width: 447px;
+            right: 50px;
+            bottom: 0;
+        }
+    }
+    .main__body-cap-circle{
+        position: absolute;
+        button{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(88.36deg, rgba(46, 46, 46, 0.4) -0.63%, rgba(108, 108, 108, 0.1) 100%);
+            backdrop-filter: blur(20px);
+            box-shadow: 0px 0px 20px 0px #33333340;
+            z-index: 14;
+            svg{
+                width: 36px;
+                height: 36px;
+            }
+        }
+        &-info.active{
+            scale: 1;
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background: linear-gradient(88.36deg, rgba(46, 46, 46, 0.4) -0.63%, rgba(108, 108, 108, 0.1) 100%);
+            backdrop-filter: blur(20px);
+            box-shadow: 0px 0px 20px 0px #33333340;
+            padding: 64px;
+            border-radius: 20px;
+            position: absolute;
+            z-index: -1;
+            transition: all 0.3s ease;
+            scale: 0;
+            span{
+                font-family: var(--bold);
+                font-weight: 700;
+                font-size: 32px;
+                leading-trim: Cap height;
+                line-height: 19px;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                color: #f9f9f9;
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                leading-trim: Cap height;
+                line-height: 20px;
+                letter-spacing: 0%;
+                color: #F9F9F9;
+            }
+        }
+    }
+}
+
+.sweet-container #ryderpockin {
+    position: absolute;
+    top: -100px;
+    left: 47%;
+    z-index: 1;
+    width: 64px;
+    margin-left: -27px;
+}
+
+
+.sweet-container .drink {
+    position: relative;
+    z-index: 1;
+    background: url(../images/dist/sweet_sprites.png) 0 0 no-repeat;
+    width: 300px;
+    height: 539px;
+    background-position-y: -10780px;
+    background-size: cover;
+}
+.sweet-container .drink .rydercup-first {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/dist/logo__glass.png) 0 bottom no-repeat;
+    scale: 1.1;
+}
+
+.sweet-container #rydersock {
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+}
+.sweet-container #rydersock img{
+    width: 100%;
+    height: 100%;
+}
+.sweet-container #ryderdrag {
+    z-index: 1;
+    position: absolute;
+    top: -194px;
+    left: 50%;
+    margin-left: -38px;
+    width: 76px;
+    height: 76px;
+}
+.sweet-container #ryderdrag .circle {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sweet-container #ryderdrag .drag {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.sweet-container #ryderdrag .drag:before, .sweet-container #ryderdrag .drag:after {
+    content: '';
+    width: 16px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    -webkit-transform: rotate(28deg);
+    -ms-transform: rotate(28deg);
+    transform: rotate(28deg);
+}
+.sweet-container #ryderdrag .drag:after {
+    margin-left: -1px;
+    -webkit-transform: rotate(-28deg);
+    -ms-transform: rotate(-28deg);
+    transform: rotate(-28deg);
+}
+.sweet-container #ryderfakedrag {
+    position: absolute;
+    top: -210px;
+    left: -10px;
+    width: 190px;
+    height: 180px;
+}
